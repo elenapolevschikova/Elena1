@@ -10,3 +10,10 @@ def classing(request):
 
 def functional(request):
     return render(request, 'second_task/func_template.html')
+
+
+
+
+
+
+
