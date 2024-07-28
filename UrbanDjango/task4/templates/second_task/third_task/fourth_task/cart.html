@@ -1,10 +1,10 @@
-{% extends 'second_task/third_task/platform.html' %}
+{% extends 'second_task/third_task/fourth_task/platform.html' %}
 
-{% block title %}Магазин{% endblock %}
+{% block title %}{{ pagename }}{% endblock %}
 
 {% block content %}
     <div class="features">
-        <h1>Карзина</h1>
+        <h2>{{ pagename }}</h2>
         <ul>
             <li>Atomic Heart<button>Купить</button></li>
             <li>Cyberpunk 2077<button>Купить</button></li>
@@ -14,8 +14,3 @@
         <button class="btn btn-danger">Вернуться обратно в магазин!</button>
     </div>
 {% endblock %}
-
-
-
-
-

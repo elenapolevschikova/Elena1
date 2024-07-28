@@ -1,27 +1,47 @@
-{% extends 'second_task/third_task/platform.html' %}
+{% extends 'second_task/third_task/fourth_task/platform.html' %}
 
-{% block title %}Главная страница{% endblock %}
+{% block title %}{{ pagename }}{% endblock %}
 
 {% block content %}
     <div class="features">
-        <h1>Игры:</h1>
+        <h1>{{ pagename }}</h1>
         <p>Существует стереотипное представление о геймерах как о затворниках, которые сутками приклеены к своим креслам,
             страдают кучей комплексов, зажаты и замкнуты, неспособны налаживать контакты в реальном мире
             — то есть испытывают катастрофические проблемы с социализацией. На самом же деле, уверяют многие психологи,
             компьютерные игры помогают многим людям преодолеть социальные барьеры в общении с незнакомцами,
             пусть даже и виртуальном.</p>
-
         <ul>
             <li>Atomic Heart<button>Купить</button></li>
             <li>Cyberpunk 2077<button>Купить</button></li>
             <li>PayDay 2<button>Купить</button></li>
         </ul>
         <button class="btn btn-warning">Вернуться обратно!</button>
+
+<!--        {{ first }}, {{ second }}-->
+
+<!--        {{ games }}-->
+
+
+<!--        {% for el in games %}-->
+<!--            <p>{{ el }}</p>-->
+<!--        {% endfor %}-->
+
+
+<!--        {% for el in obj %}-->
+<!--            <p>{{ el }}</p>-->
+<!--        {% endfor %}-->
+
+
+<!--        {{ obj.hobby }}-->
+
+
+<!--        {% for el in games %}-->
+<!--            {% if el == 'Atomic Heart' %}-->
+<!--                {% filter upper %}-->
+<!--                    <p>{{ el }}</p>-->
+<!--                {% endfilter %}-->
+<!--            {% endif %}-->
+<!--        {% endfor %}-->
+
     </div>
 {% endblock %}
-
-
-
-
-
-
